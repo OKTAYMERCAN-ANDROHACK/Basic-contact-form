@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>İletişim</title>
+
+<style>
+
+#pencere {
+width: 400px;
+min-height: 150px;
+border: 2px solid #ff0000;
+border-radius:5px;
+padding:10px;
+margin:auto;
+background-color: #F1F3F5;
+}
+
+#baslik {
+color:black;
+font-weight:high;
+margin-top:-10px;
+}
+
+#chat {
+margin:auto;
+width:390px;
+height:400px;
+overflow:auto;
+border: 1px solid #000000;
+padding:5px;
+font-size:16px;
+}
+
+</style>
+
+<head>
+
+<body style="background-color:black;">
+	<form style="text-align:Center;" action="iletisimbackend.php" method="get">
+		<div id="pencere">
+			
+			<h1>İletişim Forumu</h1>
+			<input type="text" name="ad" placeholder="Tam Ad" size="52">
+			<input type="text" name="mail" placeholder="E-Mail *" size="52">
+			<input type="text" name="konu" placeholder="Konu *" size="52">
+			<input type="text" name="mesaj" placeholder="Mesajınız *" size="52">
+			<button type="submit" name="gönder"><b>GÖNDER<b></button>
+			<p>Yıldız "*" İşareti olanlar doldurması zorunlu alanlardır.</p>
+			
+		</div>
+	</form>
+</body>
+
+</html>
